@@ -1,0 +1,24 @@
+{
+  "name": "cypress-sample",
+  "version": "1.0.0",
+  "description": "Quick sample of Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypressOpen": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanDunross/Cypress-Sample.git"
+  },
+  "author": "Ian Dunross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanDunross/Cypress-Sample/issues"
+  },
+  "homepage": "https://github.com/IanDunross/Cypress-Sample#readme",
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "typescript": "^5.5.4"
+  }
+}
