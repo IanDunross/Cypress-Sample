@@ -23,3 +23,23 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import {Selectors} from './selectors'
+
+
+
+// Example of adding custom command
+
+Cypress.Commands.add('enteringCalculatorValues',(valueFirst:number,valueSecond:number)=>{
+
+    
+    cy.get(Selectors.firstInput)
+        .should('be.visible')
+        .clear()
+        .type(valueFirst.toString())
+    cy.get(Selectors.secondInput)
+        .should('be.visible')
+        .clear()
+        .type(valueSecond.toString())
+
+})
